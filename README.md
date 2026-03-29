@@ -1,6 +1,6 @@
 # MindWay
 
-MindWay é um sistema integrado de mobilidade urbana que consolida informações de diversas fontes de dados públicos de transporte, clima e infraestrutura. O objetivo é fornecer uma visão centralizada para ajudar no planejamento de deslocamentos na cidade.
+MindWay é um sistema integrado de mobilidade urbana que reune informações de diversas fontes de dados públicos de transporte, clima e infraestrutura. O objetivo é fornecer uma visão centralizada para ajudar no planejamento de deslocamentos na cidade.
 
 ## Funcionalidades
 
@@ -19,7 +19,7 @@ MindWay é um sistema integrado de mobilidade urbana que consolida informações
 
 ## APIs e Serviços Utilizados
 
-O projeto consome as seguintes bibliotecas e recursos externos gratuitos e/ou públicos:
+O projeto consome as seguintes bibliotecas e recursos externos (APIS):
 
 - **Nominatim** (Geocodificação e endereços)
 - **OSRM** (Cálculo de rotas de deslocamento)
@@ -35,24 +35,4 @@ O projeto consome as seguintes bibliotecas e recursos externos gratuitos e/ou p�
 
 - Java 17+ (JDK)
 - Apache Tomcat 9 ou superior
-- Maven 3+
-
-## Como Executar
-
-1. Clone este repositório para a sua máquina local.
-2. Reconheça o projeto utilizando a sua IDE de preferência (IntelliJ IDEA, Eclipse, NetBeans, etc) apontando para o arquivo `pom.xml`.
-3. Resolva as dependências e faça o build utilizando o Maven:
-   ```bash
-   mvn clean install
-   ```
-4. Suba a aplicação no seu servidor Apache Tomcat configurado.
-5. Em seu navegador, abra o painel inicial acessando `http://localhost:8080/MindWayWeb/` (ajuste a porta e o contexto confome a configuração do container).
-
-## Configuração
-
-A aplicação funcionará via fallback mode se as chaves das APIs privadas não estiverem presentes, porém certas funções poderão ser limitadas. 
-
-Para habilitar a integração completa:
-
-- **OpenWeatherMap:** Substitua a constante da variável `apiKey` dentro do arquivo `src/main/webapp/js/mapa.js` com a sua key.
-- **Gemini:** Modifique a propriedade `API_KEY` na classe `src/main/java/br/com/mindway/servicos/ServicoIA.java`.
+- Maven 3+.
